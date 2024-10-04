@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>John Karam William | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section {
+            display: none; /* أخفي جميع الأقسام في البداية */
+        }
+        section.active {
+            display: block; /* عرض القسم النشط فقط */
+        }
+        footer {
+            margin-top: 20px; /* مساحة بين المحتوى والجزء السفلي */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Karam William</h1>
+        <p>Flutter Developer</p>
+        <nav>
+            <a href="#" onclick="showSection('about')">About Me</a>
+            <a href="#" onclick="showSection('cv')">CV</a>
+            <a href="#" onclick="showSection('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="active">
+        <h2>About Me</h2>
+        <p>Hello! I'm John Karam William, I'm a recent graduate with a passion for mobile app development, specializing in Flutter. With a solid foundation in computer science, I thrive on tackling challenges and bringing innovative ideas to life. My experience includes creating high-quality applications and collaborating effectively within teams. I'm dedicated to continuous learning and contributing to impactful projects that make a difference.</p>
+    </section>
+
+    <section id="cv">
+        <h2>My CV</h2>
+        <p>Check out my experience, education, and skills below or download the full CV.</p>
+        <a href="https://drive.google.com/file/d/1GoQ52Uq8YVzRnQTemXbc9_IS1v561sDW/view?usp=sharing" target="_blank" class="btn">View CV</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, feel free to reach out via email or connect with me on LinkedIn!</p>
+        <p>Email: <a href="mailto:johnkaram500@gmail.com">johnkaram500@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/john-karam-380b77263/" target="_blank">My LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:johnkaram500@gmail.com">johnkaram500@gmail.com</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // أخفي جميع الأقسام
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            // عرض القسم المحدد
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>

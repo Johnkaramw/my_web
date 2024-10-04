@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cc7777;
+}
+
+header {
+    background-color: #f8f5f5;
+    color: rgb(19, 16, 16);
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    color: rgb(0, 0, 0);
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s; /* تأثير تغيير اللون */
+}
+
+header nav a:hover {
+    color: #ffcc00; /* تغيير اللون عند التمرير */
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* ظل أقوى */
+    transition: transform 0.3s, box-shadow 0.3s; /* تأثير التغيير */
+}
+
+section:hover {
+    transform: translateY(-5px); /* رفع القسم عند التمرير */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* ظل أقوى عند التمرير */
+}
+
+h1, h2 {
+    color: #333;
+    transition: color 0.3s; /* تأثير تغيير اللون */
+}
+
+h1:hover, h2:hover {
+    color: #ffcc00; /* تغيير اللون عند التمرير */
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* تأثير التغيير */
+}
+
+.btn:hover {
+    background-color: #ffcc00; /* تغيير اللون عند التمرير */
+    transform: scale(1.05); /* تكبير الزر عند التمرير */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
